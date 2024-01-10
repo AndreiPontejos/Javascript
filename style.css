@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    background-color: rgb(54, 54, 54);
+    margin: 15rem;
+    justify-content: center;
+    border-radius: 30px;
+}
+.calHeading{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+.inputSection{
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    justify-content: center;
+
+}
+.inputSection input{
+    width: 20vw;
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+    margin: 0 20px;
+}
+.btnSection{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.btnSection button{
+    font-size: 1rem;
+    padding: 5px 20px;
+    width: 150px;
+}
+.btnSection button:hover{
+    border: 1px solid white;
+    background: rgb(54, 54, 54);
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.resultSection{
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+.resultSection p{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 30px;
+}

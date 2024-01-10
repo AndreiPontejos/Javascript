@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Function</title>
+</head>
+<body>
+<div class="container">
+    <h1 class="calHeading">Arrow Function Calculator</h1>
+    <div class="inputSection">
+        <input type="text" id="firstNumInput" placeholder="Enter Value Here" required>
+        <input type="text" id="secondNumInput" placeholder="Enter Value Here" required>
+    </div>
+    <div class="btnSection">
+        <button id="additionBtn">Add</button>
+        <button id="subtractionBtn">Subtract</button>
+        <button id="multiplicationBtn">Multiply</button>
+        <button id="divisionBtn">Divide</button>
+    </div>
+    <div class="resultSection">
+        <h1>Result:</h1>
+        <p id="resultArea"></p>
+    </div>
+
+</div>
+
+<script>
+
+let inputA;
+let inputB;
+
+    document.getElementById("additionBtn").onclick = function(){
+        inputA = parseInt(document.getElementById("firstNumInput").value);
+        inputB = parseInt(document.getElementById("secondNumInput").value);
+        
+            let addition = (inputA, inputB) => inputA + inputB;
+            let addResult= addition(inputA, inputB);
+        
+        document.getElementById("resultArea").textContent = 'Sum: ' +  addResult;
+    }
+    document.getElementById("subtractionBtn").onclick = function(){
+        inputA = parseInt(document.getElementById("firstNumInput").value);
+        inputB = parseInt(document.getElementById("secondNumInput").value);
+        
+            let subtraction = (inputA, inputB) => inputA - inputB;
+            let diffResult= subtraction(inputA, inputB);
+        
+        document.getElementById("resultArea").textContent = 'Difference: ' +  diffResult;
+    }
+    document.getElementById("multiplicationBtn").onclick = function(){
+        inputA = parseInt(document.getElementById("firstNumInput").value);
+        inputB = parseInt(document.getElementById("secondNumInput").value);
+        
+            let multiplication = (inputA, inputB) => inputA * inputB;
+            let prodResult= multiplication(inputA, inputB);
+        
+        document.getElementById("resultArea").textContent = 'Product: ' +  prodResult;
+    }
+    document.getElementById("divisionBtn").onclick = function(){
+        inputA = parseInt(document.getElementById("firstNumInput").value);
+        inputB = parseInt(document.getElementById("secondNumInput").value);
+        
+            let division = (inputA, inputB) => inputA / inputB;
+            let quoResult= division(inputA, inputB);
+        
+        document.getElementById("resultArea").textContent = "Quotient: " + quoResult;
+    }
+    
+</script>
+</body>
+</html>
